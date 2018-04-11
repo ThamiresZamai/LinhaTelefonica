@@ -4,17 +4,35 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cadastro</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
-<form action="Validar.jsp" method="POST">
+<div align="center">
+		<h1>Cadastro</h1>
+		<form action="Validar.jsp" method="post">
+		 
+			<div class="col-md-6">
 
-	Nome:<input type="text" name="nome"/>
-	<br>
-	Telefone:<input type="text" name="telefone"/>
-	<br>
-	Idade:<input type="text" name="idade">
-	<br>
-	<input type="submit" value="Validar"/>
-</form>
+				<div class="form-group">
+					<div class="row">
+						<label for="nome">Nome</label> <input type="text"
+							class="form-control" id="nome" name="nome" value="${param.nome}">
+					</div>
+
+				</div>
+				
+				<div class="form-group">
+					<div class="row">
+						<label for="nome">Telefone</label> <input type="text"
+							class="form-control" id="telefone" name="telefone" value="${param.telefone}">
+					</div>
+					
+					<div class="form-group">
+					<div class="row">
+						<label for="nome">Idade</label> <input type="text"
+							class="form-control" id="idade" name="idade" value="${param.idade}">
+					</div>
+					<input type="submit" value="Salvar" class="btn btn-danger" />
+
 </body>
 </html>
